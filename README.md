@@ -11,7 +11,7 @@ These patches are then fed to an image segmentation algorithm (e.g. random fores
 The goal is to automatically segment the subpelicular microtubules that run under the cell membrane of a cell body.
 The predictions are put together and the result in combination with a region of interest (ROI) map (generated from a binary mask) allows to eliminate false predictions and only keep the information that is close to the cell membrane. 
 
-An example:
+### An example:
 
 <table>
   <tr>
@@ -30,14 +30,12 @@ An example:
     <td><img src="/images/outline.png" ></td>
     <td><img src="/images/windows.png" ></td>
   </tr>
-  <tr>
-    <td>Patches</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><img src="/images/recreation.png" ></td>
-  </tr>
+</table>
 
- </table>
+### Test run (GUI)
 
-To test it, just run the app with
+To test the function, run the app (based on tkinter) with
+
+    python .../App_contour_tracing.py
+
+![tutorial](images/app.gif)
